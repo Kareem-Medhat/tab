@@ -1,13 +1,11 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
-const Critters = require('critters-webpack-plugin');
 
 module.exports = {
   entry: __dirname + '/src/index.js',
 
   output: {
-    path: __dirname,
+    path: __dirname + '/extension/dist',
     filename: 'bundle.js'
   },
 
@@ -34,7 +32,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/template.html',
       filename: './index.html',
-      inlineSource: '.(js|css)$',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -42,10 +39,6 @@ module.exports = {
         removeScriptTypeAttributes: true,
         useShortDoctype: true,
       }
-    }),
-    new HtmlWebpackInlineSourcePlugin(),
-    new Critters({
-      preload: 'body',
-    }),
+    })
   ]
 }

@@ -1,0 +1,16 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "dist/index.html"
+   },
+   "description": "Minimal, customizable, command line startpage",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhLA3rFYOeFb/M8VjLSxv3It6eYKUe4iEIJRYvxlm2G/qIkC+X7nTvqjTxdVtcB8j09eReZiVwtsw7Qxa1cySGSCNSE8vKJ2ofQx8fgELdsqzvdXktmZsUsbLIlPz20R8iyfZZfMb1zJ1nO6HRSne4oHC0+6XzjT1qRPlGVpW3WryXF8VjAjsj22IKT9PnkKm6oS/W0qc46uiPT/dmd7X2sxRDsNivLgSIKibcpm2Ut7sTyPjZWs5ipDTdI8k/HsRac0soJGdjoLLYi9V7axqe+z29oVOtDxm0uo7WzLuBMSYO52EXV4+SEMBhlkdDISybBubg1kf1B4/CYlsGIjkbQIDAQAB",
+   "manifest_version": 3,
+   "name": "tab: a startpage",
+   "version": "1.0.8"
+}
